@@ -1,8 +1,10 @@
 <script lang="ts">
 import View from "./components/View.vue"
+import MyPokemon from "./components/MyPokemon.vue"
 export default {
   components: {
-    View
+    View,
+    MyPokemon
   },
 }
 </script>
@@ -10,6 +12,7 @@ export default {
 <template>
   <h2>Hello world</h2>
   <View element="div">Hello from view</View>
+  <MyPokemon />
 </template>
 
 <style scoped>

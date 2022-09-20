@@ -1,13 +1,13 @@
-import { render, screen }  from "@testing-library/vue";
+import { render, screen } from "@testing-library/vue";
 import { describe, it, expect } from "vitest";
 import View from "../View.vue";
 
 describe("View", () => {
-  const viewText = "Hello from inside a View";
+  const viewText = "Hello from view";
 
   it("render span correctly", async () => {
     const viewId = "viewId";
-    
+
     render(View, {
       props: { element: "span", id: viewId },
       slots: {default: viewText}
